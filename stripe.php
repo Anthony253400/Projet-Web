@@ -1,0 +1,12 @@
+<?php
+
+require_once('vendor/autoload.php'); 
+
+$public_key = "pk_test_51SQov5G6nN7oEHxoEvGSWl5LMWUCm58Y9IiTXdnHkLdNKzDLLJV3VRe8AfkfRfTcCyIazhXY8EUOqrW0RghMFduC00g2TlJyyt";
+$private_key = "sk_test_51SQov5G6nN7oEHxoK3TTP2vfnPXjZcs5z1zDqXApmm4hWi8mkAg9ou9rnUAAJOW1PfSt1eiIbSOzjpxxFeD9g36o00LdervSQc";
+
+
+$stripe = new \Stripe\StripeClient($private_key);
+
+
+?>
